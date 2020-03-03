@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:hint="Upload files and images using multipart request"
+        android:padding="5dp"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/choose_files_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/attachment_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_attach" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="choose files"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/fileName_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="files.xyz" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/uploaded_pdf_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_attach" />
+
+            <TextView
+                android:id="@+id/pdf_uploaded_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:gravity="start|center_vertical"
+                android:hint="uploaded document"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/file_uploaded_imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/upload_files_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_upload"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="upload files" />
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/download_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="download"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/show_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
